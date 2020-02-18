@@ -13,10 +13,10 @@ brew install haproxy
 ```
 
 ## Layer 4 Load Balancing
-- Run apps on port 4444 and 5555
+- Run servers on port 4444 and 5555
 ```
-ruby app.rb -p 4444
-ruby app.rb -p 5555
+ruby server.rb -p 4444
+ruby server.rb -p 5555
 ```
 
 - Run
@@ -33,12 +33,12 @@ haproxy -f tcp.cfg
 ```
 
 ## Layer 7 Load Balancing
-- Run apps on port 4444, 5555, 7777, 8888
+- Run servers on port 4444, 5555, 7777, 8888
 ```
-ruby app.rb -p 4444
-ruby app.rb -p 5555
-ruby app.rb -p 7777
-ruby app.rb -p 8888
+ruby server.rb -p 4444
+ruby server.rb -p 5555
+ruby server.rb -p 7777
+ruby server.rb -p 8888
 ```
 
 - Run
